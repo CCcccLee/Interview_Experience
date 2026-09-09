@@ -2,7 +2,7 @@
 
 ### 上下文压缩
 
-![image-20260824171754927](assets/image-20260824171754927.png)
+![image-20260824171754927](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260824171754927.png)
 
 这种设计的另一个好处是各层相互协调。第2层Snip会告诉第5层「我已经释放了多少 Token」，避免重复压缩。第4层Context Collapse在第5层之前运行，如果它够用了，第5层就不触发。每一层都在为下一层「减负」。
 
@@ -22,7 +22,7 @@
 
   3. 第三步：Post-Compact Restoration(压缩后恢复)。这是整个流程中最关键的一步，压缩完不是就完了，还要主动恢复最重要的上下文。找出最近访问过的文件，按最后访问时间排序，挑选出5个文件内容重新注入，同时恢复活跃的skill。主要是担心压缩后的模型失忆了，不记得刚才度过的文件内容
 
-     <img src="assets/image-20260824215023376.png" alt="image-20260824215023376" style="zoom:83%;" />
+     <img src="C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260824215023376.png" alt="image-20260824215023376" style="zoom:83%;" />
 
 ### 长期记忆存储
 
@@ -32,7 +32,7 @@ Claude code分为两层：
 
 - 静态层：
 
-​	<img src="assets/image-20260825145738367.png" alt="image-20260825145738367" style="zoom:70%;" />
+​	<img src="C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260825145738367.png" alt="image-20260825145738367" style="zoom:70%;" />
 
 - **动态记忆memory系统层**：
 
@@ -80,9 +80,9 @@ Claude Code主循环背后有**四个设计哲学**:
 
 ### multiagent
 
-![image-20260729173417381](assets/image-20260729173417381.png)
+![image-20260729173417381](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260729173417381.png)
 
-![image-20260729173438723](assets/image-20260729173438723.png)
+![image-20260729173438723](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260729173438723.png)
 
 ### 为什么代码检索用grep而不用RAG
 
@@ -96,9 +96,9 @@ Claude Code主循环背后有**四个设计哲学**:
 
 3. 第三步，用 Read 读命中文件的相关行段，看具体实现。
 
-   ![image-20260825114911776](assets/image-20260825114911776.png)
+   ![image-20260825114911776](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260825114911776.png)
 
-![image-20260729173643540](assets/image-20260729173643540.png)
+![image-20260729173643540](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260729173643540.png)
 
 ### MultiAgent
 

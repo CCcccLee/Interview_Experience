@@ -156,7 +156,7 @@ CREATE TABLE students (
 - 聚簇索引：//TODO
 - 
 
-![image-20260828101728688](assets/image-20260828101728688.png)
+![image-20260828101728688](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260828101728688.png)
 
 ##### mysql为什么默认引擎是InnoDB：
 
@@ -374,7 +374,7 @@ B+树的高度在**3层时存储的数据可能已达千万级别**，但对于�
 
 尽量在开启事务之后，马上执行 select ... for update 这类锁定读的语句，因为它会对记录加 next-key lock（行锁+间隙锁），从而避免其他事务插入一条新记录，就避免了幻读的问题。
 
-![image-20260902171124085](assets/image-20260902171124085.png)
+![image-20260902171124085](C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260902171124085.png)
 
 ##### 一个事务里有特别多sql的弊端
 

@@ -23,7 +23,7 @@ RNN/LSTM 的致命缺陷：
 
  绝对位置编码（原始 Transformer）
 
-<img src="assets/image-20260730111908532.png" alt="image-20260730111908532" style="zoom:73%;" />
+<img src="C:\Users\CC\AppData\Roaming\Typora\typora-user-images\image-20260730111908532.png" alt="image-20260730111908532" style="zoom:73%;" />
 
 - **优点**：可学习任意长度序列的位置关系（通过[正弦函数](https://zhida.zhihu.com/search?content_id=269389391&content_type=Article&match_order=1&q=正弦函数&zhida_source=entity)的周期性）
 - **缺点**：无法显式建模相对位置
